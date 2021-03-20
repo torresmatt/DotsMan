@@ -38,22 +38,22 @@ namespace Systems
 
                 var validDirections = new NativeList<float3>(Allocator.Temp);
 
-                var newDirection = new float3(0, 0, -1);
+                var newDirection = Float3Extensions.Forward;
 
                 // TODO: This screams to be abstracted to a method
                 var currentDirection = movable.Direction;
                 var hitSomething = rayCaster.CheckRay(currentCell, newDirection, currentDirection, collider);
                 if (!hitSomething) validDirections.Add(newDirection);
 
-                newDirection = new float3(0, 0, 1);
+                newDirection = Float3Extensions.Back;
                 hitSomething = rayCaster.CheckRay(currentCell, newDirection, currentDirection, collider);
                 if (!hitSomething) validDirections.Add(newDirection);
 
-                newDirection = new float3(-1, 0, 0);
+                newDirection = Float3Extensions.Left;
                 hitSomething = rayCaster.CheckRay(currentCell, newDirection, currentDirection, collider);
                 if (!hitSomething) validDirections.Add(newDirection);
 
-                newDirection = new float3(1, 0, 0);
+                newDirection = Float3Extensions.Right;
                 hitSomething = rayCaster.CheckRay(currentCell, newDirection, currentDirection, collider);
                 if (!hitSomething) validDirections.Add(newDirection);
 
@@ -79,7 +79,6 @@ namespace Systems
                     Filter = new CollisionFilter()
                     {
                         GroupIndex = 0,
-                        //TODO: surely this can be done better. The enemies have a physics body we could get a reference to
                         BelongsTo = collider.Value.Value.Filter.BelongsTo,
                         CollidesWith = collider.Value.Value.Filter.CollidesWith
                     }
