@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 5996033446981081806}
   - component: {fileID: 5996033446981081795}
   - component: {fileID: 5996033446981081802}
-  - component: {fileID: -3801229547149204479}
+  - component: {fileID: 251994343101090186}
+  - component: {fileID: 8678094297517923363}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -336,7 +337,7 @@ MonoBehaviour:
       m_Value: 0
   m_SerializedVersion: 1
   m_ConvexRadius_Deprecated: -1
---- !u!114 &-3801229547149204479
+--- !u!114 &251994343101090186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,9 +346,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5996033446981081803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fd26a7d13424924bd71c1423902aa04, type: 3}
+  m_Script: {fileID: 11500000, guid: ceaf0d51ee874d79a2664efc5b3dc73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8678094297517923363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996033446981081803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b18a2467cc84ed3be9eb60e8b535c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 1
+  InvincibilityTimer: 0
+  KillTimer: 1
 --- !u!1 &5996033447527366739
 GameObject:
   m_ObjectHideFlags: 0
