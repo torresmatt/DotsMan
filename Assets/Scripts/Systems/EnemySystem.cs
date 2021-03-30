@@ -67,6 +67,7 @@ namespace Systems
         private struct MovementRaycast
         {
             [ReadOnly] public PhysicsWorld PhysicsWorld;
+            public CollisionFilter RaysCollideWith;
 
             public bool CheckRay(float3 position, float3 direction, float3 currentDirection, PhysicsCollider collider)
             {

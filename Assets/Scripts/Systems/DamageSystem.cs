@@ -41,7 +41,7 @@ namespace Systems
                     }
                 }).Schedule();
 
-            // entityInQueryIndex MUST be called that
+            // entityInQueryIndex MUST be named exactly this way
             Entities.ForEach((Entity entity, int entityInQueryIndex, ref Kill kill) =>
             {
                 kill.Timer -= deltaTime;

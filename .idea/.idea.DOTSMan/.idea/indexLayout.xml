@@ -12,6 +12,7 @@
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.3</Path>
       <Path>Library/PackageCache/com.unity.jobs@0.2.10-preview.13</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.2.1</Path>
+      <Path>Library/PackageCache/com.unity.nuget.mono-cecil@0.1.6-preview.2</Path>
       <Path>Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1</Path>
       <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0</Path>
       <Path>Library/PackageCache/com.unity.physics@0.4.1-preview</Path>
@@ -27,6 +28,7 @@
       <Path>Library/PackageCache/com.unity.test-framework@1.1.24</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.1.4</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.18</Path>
+      <Path>Library/PackageCache/nuget.mono-cecil@0.1.6-preview</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
