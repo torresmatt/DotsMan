@@ -60,7 +60,8 @@ namespace Systems
             var physicsWorld = World.GetOrCreateSystem<BuildPhysicsWorld>().PhysicsWorld;
             var simulation = World.GetOrCreateSystem<StepPhysicsWorld>().Simulation;
 
-            Entities.ForEach((DynamicBuffer<CollisionBuffer> collisionBuffer) => { collisionBuffer.Clear(); }).Run();
+            Entities.ForEach((DynamicBuffer<CollisionBuffer> collisionBuffer) => { collisionBuffer.Clear(); })
+                .Schedule();
 
             var collisionJobHandle = new CollisionSystemJob()
             {

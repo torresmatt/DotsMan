@@ -32,11 +32,10 @@ namespace Systems
                     powerPill.PillTimer -= deltaTime;
                     health.InvincibilityTimer = powerPill.PillTimer;
 
-                    if (powerPill.PillTimer <= 0)
-                    {
-                        entityCommandBuffer.RemoveComponent<PowerPill>(entity);
-                        entityCommandBuffer.RemoveComponent<Damage>(entity);
-                    }
+                    if (powerPill.PillTimer > 0) return;
+
+                    entityCommandBuffer.RemoveComponent<PowerPill>(entity);
+                    entityCommandBuffer.RemoveComponent<Damage>(entity);
                 }).Run();
         }
     }
